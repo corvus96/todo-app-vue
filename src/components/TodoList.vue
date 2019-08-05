@@ -7,7 +7,11 @@
         </todo-card>
 
         <todo-card class="mx-auto mt-10 w-full max-w-lg">
+<<<<<<< Updated upstream
             Create/Edit Task
+=======
+            Create/Edit Task 
+>>>>>>> Stashed changes
         </todo-card>
     </div>
 </template>
