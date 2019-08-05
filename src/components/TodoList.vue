@@ -7,7 +7,7 @@
         </todo-card>
 
         <todo-card class="mx-auto mt-10 w-full max-w-lg">
-            Create/Edit Task bjkbkjbjbj
+            Create/Edit Task
         </todo-card>
     </div>
 </template>
