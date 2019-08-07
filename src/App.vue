@@ -6,11 +6,13 @@
 
 <script>
 import TodoList from './components/TodoList.vue'
+import Task from './components/Task.vue'
+import TasksList from './components/TasksList.vue'
 
 export default {
     name: 'app',
     components: {
-        TodoList
+        TodoList,Task,TasksList
     }
 }
 </script>

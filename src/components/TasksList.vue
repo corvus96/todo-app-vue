@@ -1,5 +1,5 @@
 <template>
-    <h1 class="text-red-400">Tasks List</h1>
+    
 </template>
 
 <script>
