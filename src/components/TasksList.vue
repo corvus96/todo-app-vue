@@ -1,11 +1,19 @@
 <template>
-    <h1 class="text-red-400">Tasks List</h1>
+    <ul>
+    {{ todo.description }}
+    <button @click="$emit('remove', todo.id)">
+      X
+    </button>
+  </ul>
 </template>
 
 <script>
 export default {
     props: {
-
+        todo: {
+      type: Object,
+      required: true
+        }
     },
 
     data () {
