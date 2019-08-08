@@ -1,10 +1,15 @@
 <template>
     <ul>
-    {{ todo.description }}
-    <button @click="$emit('remove', todo.id)">
-      X
-    </button>
-  </ul>
+        <input type="checkbox" id="checkbox" v-model="checked" >
+        {{ todo.description }}
+
+        <button @click="$emit('remove', todo.id)">
+        X
+        </button>
+        <button @click="$emit('edit', todo.id)">
+        edit
+        </button>
+    </ul>
 </template>
 
 <script>
@@ -18,8 +23,8 @@ export default {
     },
 
     data () {
-        return {
-
+        return {   
+            checked: false
         };
     },
 
