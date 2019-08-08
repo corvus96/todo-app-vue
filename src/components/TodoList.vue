@@ -6,7 +6,7 @@
         </todo-card>
         <todo-card   class="mx-auto mt-4 h-32 w-full max-w-lg">
         <ul v-if="tasks.length">
-		<todo-tasks-list	v-for="todo in tasks" :key="todo.id" :todo="todo" @remove="removeTodo" @edit="editTodo" /> 
+               	<todo-tasks-list	v-for="todo in tasks" :key="todo.id" :todo="todo" @remove="removeTodo" @edit="editTodo" />       
 		</ul>
         </todo-card>
     </div>
@@ -50,6 +50,7 @@ export default {
         },
         editTodo(){
             console.log("I am here")
+
         }
     }
 }
