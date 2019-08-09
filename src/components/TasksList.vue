@@ -1,15 +1,15 @@
 <template>
 
-   <todo-card class="h-2 rounded-lg bg-gray-400 container py-20 flex flex-col flex-wrap max-h-full mx-auto mt-4 w-11/12 max-w-lg">
+   <todo-card class="h-2 rounded-lg bg-gray-400 container py-20 flex flex-row flex-wrap max-h-full mx-auto mt-4 w-11/12 max-w-lg">
     
-        <div class="container flex">
+        <div class="container  flex">
             <p>
-                <div class="flex w-1/2 px-1 mx-1 font-medium text-xl">
+                <div class="block mx-auto flex w-1/2 px-1 mx-1 font-medium text-xl">
                     <div>
                         <input class="w-3"   type="checkbox" id="checkbox" v-model="todo.done" >
                     </div>
                     <div class="px-1 mx-1 font-medium text-xl">
-                        <h1 v-if="todo.done" class="bg-red-700" >  {{ todo.description }} </h1>
+                        <h1 v-if="todo.done" class="line-through" >  {{ todo.description }} </h1>
                         <h1 v-else >  {{ todo.description }} </h1>
                     </div>
                     

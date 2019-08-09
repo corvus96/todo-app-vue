@@ -1,16 +1,25 @@
 <template>
-    <div class="container mx-auto  flex flex-col flex-wrap">
-        <h1 class="font-hairline text-6xl text-center text-gray-500">Todo App</h1>
-        <todo-card class=" np,nbg-gray-400 rounded-lg mx-auto mt-10 w-full max-w-lg">
-            <todo-task @receive-task="newTodo"></todo-task>
-        </todo-card>
-     
-        <ul 
-        v-if="tasks.length">
-		<todo-tasks-list	v-for="todo in tasks" :key="todo.id" :todo="todo" @remove="removeTodo" @edit="editTodo" /> 
-		</ul>
-       
-    </div>
+<div> 
+    
+    <h1 class="font-hairline text-6xl text-center text-gray-500">Todo App</h1>
+
+    <div class="container mx-auto  flex flex-row flex-wrap"> 
+        
+        <div class="w-1/2" >
+            <todo-card class=" h-32 bg-gray-400 rounded-lg mx-auto mt-10 w-full max-w-lg">
+                <todo-task @receive-task="newTodo"></todo-task>
+            </todo-card>
+        </div>
+        
+        <div class="w-1/2" >
+            <ul v-if="tasks.length">
+                <todo-tasks-list	v-for="todo in tasks" :key="todo.id" :todo="todo" @remove="removeTodo" @edit="editTodo" /> 
+            </ul>
+        </div>
+      
+    </div> 
+</div>
+    
 </template>
 
 <script>
