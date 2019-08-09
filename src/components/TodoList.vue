@@ -1,14 +1,12 @@
 <template>
     <div class="container mx-auto px-4 py-20 flex flex-col flex-wrap">
         <h1 class="font-hairline text-6xl text-center text-gray-500">Todo App</h1>
-        <todo-card class="mx-auto mt-10 w-full max-w-lg">
+        <todo-card class="mx-auto mt-10 w-full max-w-lg rounded">
             <todo-task @receive-task="newTodo"></todo-task>
         </todo-card>
-        <todo-card   class="mx-auto mt-4 h-32 w-full max-w-lg">
         <ul v-if="tasks.length">
                	<todo-tasks-list	v-for="todo in tasks" :key="todo.id" :todo="todo" @remove="removeTodo" @edit="editTodo" />       
 		</ul>
-        </todo-card>
     </div>
 </template>
 
