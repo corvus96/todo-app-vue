@@ -6,7 +6,7 @@
     <div class="container mx-auto  flex flex-row flex-wrap"> 
         
         <div class="w-1/2" >
-            <todo-card class=" h-32 bg-gray-400 rounded-lg mx-auto mt-10 w-full max-w-lg">
+            <todo-card class=" h-24 bg-gray-400 rounded-lg mx-auto mt-0 w-full max-w-lg">
                 <todo-task @receive-task="newTodo"></todo-task>
             </todo-card>
         </div>
